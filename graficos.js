@@ -1,3 +1,4 @@
+// Gráficos de Pizza
 const ctxPiza = document.getElementById('graficoPizza').getContext('2d');
 const graficoPizza = new Chart(ctxPiza, {
     type: 'pie',
@@ -5,9 +6,9 @@ const graficoPizza = new Chart(ctxPiza, {
         labels: ['Rock', 'Pop', 'Hip Hop', 'Eletrônica', 'Sertanejo', 'Funk', 'Outros'],
         dataets: [{
         label: 'Qual seu gênero musical favorito?',
-            data: [45,30, 15, 10],
+            data: [28,11, 11, 6, 11, 11, 28],
             backgroundColor: [
-                '#F05454', '#30475E', 'DDDDDD', '#222831'
+                '#F05454', '#30475E', '#DDDDDD', '#222831' , '#7FFF00' , '#FF69B4', '#FFA500'
             ],
             borderColor: '#DDDDDD',
             borderWidth: 1
@@ -32,11 +33,13 @@ const ctxBarras = document.getElementById('graficoBarra').getContext('2d');
 const graficosBarra = new Chart(ctxBarra, {
     type:'bar',
     data: {
-        labels: ['Facebook', 'Instagram', 'Twitter', 'LinkedIn'],
+        labels: ['Diariamente', 'Algumas vezes por semana', 'raramente', 'mensalmente'],
         datasets: [{
-            label: 'Usuarios ativos (em milhões)',
-            data: [2800, 1500, 330, 810],
-            backgroundColor: '#F05454',
+            label: 'Com que frequência você ouve música?',
+            data: [7800, 560, 1700, 0],
+            backgroundColor: [
+                '#F05454', '#30475E' , '#DDDDDD' , '#222831'
+            ]0
             borderColor: '#30475E',
             borderWidth: 1
         }]
@@ -49,7 +52,7 @@ const graficosBarra = new Chart(ctxBarra, {
             },
             title: {
                 display: true,
-                text: 'Usuários Ativos nas Redes Sociais (milhões)'
+                text: 'Com que frequência você ouve música?'
             }
         },
         scales: {
