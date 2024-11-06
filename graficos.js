@@ -63,10 +63,10 @@ const ctxBarras = document.getElementById('graficoBarra').getContext('2d');
 const graficosBarra = new Chart(ctxBarra, {
     type:'bar',
     data: {
-        labels: ['Diariamente', 'Algumas vezes por semana', 'raramente', 'mensalmente'],
+        labels: ['Não tenho', 'Kanye West', 'Gummy bear', 'Felipe Boladão', 'avenged', 'Tim maia', 'System of a Down', 'Powerful', 'Manoel Gomes', 'Mayck e Lyan', 'Lady gaga', 'Henrique e Juliano', 'Daughter e Pierce The evil', 'Creppy nuts', 'Chrono e M4rkim',   ],
         datasets: [{
             label: 'Qual é a sua banda ou artita favorito?',
-            data: [7800, 560, 1700, 0],
+            data: [1100, 560, 560, 560, 560, 560, 560, 560, 560, 560, 560, 560, 560, 560, 560, 560, 560],
             backgroundColor: [
                 '#F05454', '#30475E' , '#DDDDDD' , '#222831'
             ]0
